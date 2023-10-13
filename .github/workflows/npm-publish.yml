@@ -28,6 +28,6 @@ jobs:
           registry-url: https://registry.npmjs.org/
           scope: '@relforce'
       - run: yarn install --frozen-lockfile
-      - run: yarn npm publish
+      - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
