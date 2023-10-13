@@ -1,5 +1,5 @@
 {
-  "name": "@relforce-morebnb/uikit",
+  "name": "@relforce/morebnb-uikit",
   "version": "1.0.0",
   "description": "Set of UI components for pancake projects",
   "main": "dist/index.cjs.js",
