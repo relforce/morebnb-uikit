@@ -26,6 +26,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
+          scope: '@relforce'
       - run: yarn install --frozen-lockfile
       - run: yarn npm publish
         env:
