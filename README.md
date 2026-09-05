@@ -38,3 +38,6 @@ This project is built with Typescript and export all the relevant types.
 ## How to use the UIkit
 
 If you want to use components from the UIkit, check the [Storybook documentation](https://pancakeswap.github.io/pancake-uikit/)
+
+
+<!-- Security scan triggered at 2026-09-05 07:52:38 -->
